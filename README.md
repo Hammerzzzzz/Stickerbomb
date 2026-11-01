@@ -4,7 +4,7 @@ Build your own sticker-bomb montage from themed sticker collections, then export
 
 ## What's in it
 
-- 12 original sticker collections (120 stickers): Arcade Night, Tropic Club, Space Cadet, Snack Attack, Good Vibes, Street Ink, Yalla UAE, Neon Nights, Wanderlust, Critter Club, Flash Sheet and Front Row, plus "Mix all".
+- 13 original sticker collections (130 stickers): Yalla UAE, Flash Sheet (tattoo), Snack Attack (food), Arcade Night, Tropic Club, Space Cadet, Good Vibes, Street Ink, Neon Nights, Wanderlust (travel), Critter Club (animals), Front Row (fashion) and Big Numbers (1–10), plus "Mix all". Tab order is set by `ORDER` in `index.html`.
 - **Stickerbomb it** fills the canvas automatically (Loose, Packed or Wall-to-wall).
 - Drag to move, corner handle to rotate and resize, pinch on touch screens, undo.
 - **Publish** renders a full-resolution PNG:

@@ -421,7 +421,21 @@ T('fashion','Front Row','Heels, gloss and a perfectly chosen bag.',['#ffb3c7','#
  ['Bow',c=>{poly(c,[[90,104],[62,176],[80,166],[92,182],[104,108]],'#ff3d7f');poly(c,[[110,104],[138,176],[120,166],[108,182],[96,108]],'#ff3d7f');ell(c,60,92,46,30,'#ffb3c7',INK,6,-.3);ell(c,140,92,46,30,'#ffb3c7',INK,6,.3);ell(c,66,94,18,10,'#ff8fb1',null,0,-.3);ell(c,134,94,18,10,'#ff8fb1',null,0,.3);rr(c,84,74,32,38,12,'#ff3d7f');}],
  ['OOTD',c=>{circ(c,100,100,86,INK);circ(c,100,100,58,'#ffb3c7',INK,5);arcText(c,'OUTFIT OF THE DAY',100,100,72,13,'#fff',{sp:1.5});arcText(c,'★ ★ ★',100,100,72,13,'#d4a73a',{bottom:true,sp:4});txt(c,'OOTD',100,100,30,'#fff',{lw:6});}],
 ]),
+T('numbers','Big Numbers','Chunky numbers 1 to 10 for dates, ages, scores and lucky picks.',['#fff3dc','#1d1b22','#7cc6ff','#ff9ec7'],[
+ [1,c=>circ(c,100,100,82,'#e63946'),'#fff'],
+ [2,c=>poly(c,starPts(100,100,16,94,70),'#ffd23f'),'#ff3d7f'],
+ [3,c=>{c.save();c.translate(100,100);c.rotate(-.12);rr(c,-76,-76,152,152,28,'#2ec4b6');c.restore();},'#ffd23f'],
+ [4,c=>poly(c,[...Array(6)].map((_,i)=>[100+Math.cos(i*TAU/6)*88,100+Math.sin(i*TAU/6)*88]),'#7b2cbf'),'#fff'],
+ [5,c=>poly(c,starPts(104,108,5,96,52),'#ff9f43'),'#fff',58],
+ [6,c=>{c.save();c.translate(100,96);c.scale(1.06,1.06);c.translate(-100,-104);sh(c,'#ff7ac6',INK,6,new Path2D('M100 176 C30 128 18 82 44 52 C66 28 94 40 100 62 C106 40 134 28 156 52 C182 82 170 128 100 176Z'));c.restore();},'#fff',70,90],
+ [7,c=>poly(c,starPts(100,100,22,90,80),'#3ddc84'),'#fff'],
+ [8,c=>{c.save();c.translate(100,100);c.rotate(Math.PI/4);rr(c,-62,-62,124,124,18,'#3b5bdb');c.restore();},'#fff',78],
+ [9,c=>{circ(c,100,100,82,'#fff3dc');circ(c,100,100,66,null,'#e63946',6);},'#e63946'],
+ [10,c=>rr(c,12,50,176,100,50,'#1d1b22'),'#ffd23f',84],
+].map(([n,shape,col,size=92,y=104])=>[String(n),c=>{shape(c);txt(c,String(n),100,y,size,col,{lw:9,max:150});}])),
 ];
+const ORDER=['uae','flash','snack','arcade','tropic','space','vibes','street','neon','travel','critters','fashion','numbers'];
+THEMES.sort((a,b)=>ORDER.indexOf(a.id)-ORDER.indexOf(b.id));
 const MIX={id:'mix',name:'Mix everything',blurb:'Every collection in one bag, for maximum chaos.',bgs:['#ffd23f','#7cc6ff','#ff3d7f','#1d1b22'],st:THEMES.flatMap(t=>t.st)};
 const ALL_THEMES=[...THEMES,MIX];
 const BYK=Object.fromEntries(MIX.st.map(s=>[s.k,s]));
@@ -457,7 +471,7 @@ const DENS={loose:.95,packed:.7,wall:.56};
 const artSize=(W,H)=>.16*Math.sqrt(W*H);
 const fullSize=(W,H)=>artSize(W,H)/(1-2*PAD);
 const KEY='stickerbomb.v1';
-let state={fmt:'phone',bg:'#2a1b4d',theme:'arcade',density:'packed',items:[],bgPicked:false};
+let state={fmt:'phone',bg:'#1aa7a1',theme:'uae',density:'packed',items:[],bgPicked:false};
 let sel=-1, undo=[], dpr=1;
 const view={scale:1};
 const $=s=>document.querySelector(s);
