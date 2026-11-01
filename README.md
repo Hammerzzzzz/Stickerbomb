@@ -1,0 +1,35 @@
+# Stickerbomb Studio
+
+Build your own sticker-bomb montage from themed sticker collections, then export it as a phone wallpaper, desktop wallpaper, laptop skin or phone case print.
+
+## What's in it
+
+- 12 original sticker collections (120 stickers): Arcade Night, Tropic Club, Space Cadet, Snack Attack, Good Vibes, Street Ink, Yalla UAE, Neon Nights, Wanderlust, Critter Club, Flash Sheet and Front Row, plus "Mix all".
+- **Stickerbomb it** fills the canvas automatically (Loose, Packed or Wall-to-wall).
+- Drag to move, corner handle to rotate and resize, pinch on touch screens, undo.
+- **Publish** renders a full-resolution PNG:
+
+| Format | Size (px) | Print size |
+| --- | --- | --- |
+| Phone wallpaper | 1290 × 2796 | Screen only |
+| Desktop wallpaper | 2560 × 1440 | Screen only |
+| Laptop skin (13–14") | 3600 × 2550 | 30.5 × 21.6 cm at 300 dpi |
+| Phone case print | 1500 × 3000 | 12.7 × 25.4 cm at 300 dpi |
+| Square post | 2400 × 2400 | 20.3 × 20.3 cm at 300 dpi |
+
+All sticker art is drawn in code in `index.html` and is original. It contains no third-party characters, logos or brand marks.
+
+## Run locally
+
+Open `index.html` in a browser. There is no build step.
+
+## Deploy on Render
+
+This repo includes a `render.yaml` blueprint for a free static site.
+
+1. In the Render dashboard choose **New → Blueprint** and pick this repository, or choose **New → Static Site** with an empty build command and publish directory `.`.
+2. Render deploys automatically on every push to `main`.
+
+## Adding a sticker collection
+
+Collections live in the `THEMES` array in `index.html`. Each sticker is a name plus a drawing function in a 200 × 200 box; the die-cut white border and shadow are added automatically.
