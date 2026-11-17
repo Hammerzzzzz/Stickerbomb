@@ -4,6 +4,8 @@ Build your own sticker-bomb montage from themed sticker collections, then export
 
 **[Make a montage → stickerbomb.onrender.com](https://stickerbomb.onrender.com)**
 
+![Stickerbomb Studio with a packed sticker montage on a laptop skin](docs/screenshot.jpg)
+
 ## Why I built it
 
 Sticker-bombed laptops and phone cases are a big part of how people show their personality, but making a good montage by hand is fiddly. I wanted a playful creative tool where anyone can build one in a minute and export it at print quality.
