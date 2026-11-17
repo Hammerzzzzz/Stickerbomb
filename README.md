@@ -4,7 +4,7 @@ Build your own sticker-bomb montage from themed sticker collections, then export
 
 **[Make a montage → stickerbomb.onrender.com](https://stickerbomb.onrender.com)**
 
-![Stickerbomb Studio with a packed sticker montage on a laptop skin](docs/screenshot.jpg)
+![Stickerbomb Studio demo: picking the Yalla UAE and Neon Nights collections, auto-filling the canvas, and switching between laptop skin and phone wallpaper](docs/demo.gif)
 
 ## Why I built it
 
