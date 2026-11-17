@@ -2,6 +2,17 @@
 
 Build your own sticker-bomb montage from themed sticker collections, then export it as a phone wallpaper, desktop wallpaper, laptop skin or phone case print.
 
+**[Make a montage → stickerbomb.onrender.com](https://stickerbomb.onrender.com)**
+
+## Why I built it
+
+Sticker-bombed laptops and phone cases are a big part of how people show their personality, but making a good montage by hand is fiddly. I wanted a playful creative tool where anyone can build one in a minute and export it at print quality.
+
+- **Audience:** people who personalise their phones and laptops, and small print-on-demand sellers.
+- **Approach:** themed collections (including a UAE pack), one-tap "Stickerbomb it" layouts, then drag, rotate and resize, and export at real wallpaper and print sizes.
+- **What I'd measure:** montages published, which collections get used most, and which export formats people choose. That would show which themes to add next.
+- **What I learned:** all the sticker art is drawn in code, which keeps it original and free of third-party brands, and makes adding a new collection quick.
+
 ## What's in it
 
 - 13 original sticker collections (130 stickers): Yalla UAE, Flash Sheet (tattoo), Snack Attack (food), Arcade Night, Tropic Club, Space Cadet, Good Vibes, Street Ink, Neon Nights, Wanderlust (travel), Critter Club (animals), Front Row (fashion) and Big Numbers (1–10), plus "Mix all". Tab order is set by `ORDER` in `index.html`.
